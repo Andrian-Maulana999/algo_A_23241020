@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Masukan jari-jari bola: ");
+        double radius = scanner.nextDouble();
+
+        double volume = calculateVolume(radius);
+
+        System.out.println("Volume bola adalah " + volume);
+    }
+
+    public static double calculateVolume(double radius) {
+        return (4 / 3) * Math.PI * Math.pow(radius, 3);
+    }
+}
